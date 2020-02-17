@@ -1,5 +1,17 @@
-﻿@model MyFace.Models.View.PostsViewModel
+﻿@using Microsoft.EntityFrameworkCore.Infrastructure
+@model MyFace.Models.View.PostsViewModel
 
 @{
     Layout = "_Layout";
+}
+
+<h2> Hello hello hello</h2>
+
+@section WiesjesSection {
+    <h2>Hi again!</h2>
+}
+
+@foreach (var post in Model.Posts)
+{
+    <p>@post.Id</p>
 }
